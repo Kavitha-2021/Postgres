@@ -1,13 +1,12 @@
 const mongoose = require('mongoose');
 
-const bookSchema = new mongoose.Schema({
-    name: String,
-    age: Number
+const taskShema = new mongoose.Schema({
+    task: String,
 });
 
 
-var Book = mongoose.model("Book", bookSchema);
+var Task = mongoose.model("Task", taskShema);
 
 
-module.exports = Book;
+module.exports = Task;
 
